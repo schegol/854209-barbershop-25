@@ -5,8 +5,93 @@
     <title>HTML Academy: Барбершоп</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-nav">
+        <a class="site-logo" href="index.html">
+          <img width="" height="" alt="Логотип барбершопа" src="http://placehold.it/150x100">
+        </a>
+        <ul class="main-menu">
+          <li><a href="#">Информация</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Прайс-лист</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="user-area">
+          <li class="login"><a href="#">Войти</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1 class="page-title">Набор для путешествия "Baxter of California"</h1>
 
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="catalog.html">Магазин</a></li>
+        <li><a href="#">Средства для ухода</a></li>
+        <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
+      </ul>
+
+      <section class="product-images">
+        <h2 class="visually-hidden">Изображения товара</h2>
+        <p>
+          <img class="product-image-full" width="400" height="400" src="http://placehold.it/400x400" alt="Фото набора">
+        </p>
+        <ul class="product-image-small">
+          <img width="100" height="100" src="http://placehold.it/100x100" alt="Другое фото набора">
+          <img width="100" height="100" src="http://placehold.it/100x100" alt="Упакованный набор">
+          <img width="100" height="100" src="http://placehold.it/100x100" alt="Фото набора">
+        </ul>
+      </section>
+
+      <section class="product-description">
+        <h2 class="visually-hidden">Описание товара</h2>
+        <p class="product-avalibility">Есть в наличии</p>
+        <p class="product-article">Артикул: Dexter-AE</p>
+        <p class="product-details">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+        <p class="product-price">
+          <b>2 900 ₽</b>
+          <a class="button" href="#">Купить</a>
+        </p>
+        <h3>В набор входят</h3>
+        <ul class="product-list">
+          <li>Средство для умывания (50 мл)</li>
+          <li>Увлажняющий крем (50 мл)</li>
+          <li>Крем для бритья (50 мл)</li>
+          <li>Крем после бритья, шампунь (50 мл)</li>
+          <li>Удобная кожаная косметичка</li>
+        </ul>
+      </section>
+
+      <footer class="main-footer">
+        <p class="footer-contacts">
+          Барбершоп "Бородинский"<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19<br>
+          <a href="#">Как нас найти?<a>
+          Телефон: +7 (812) 666-02-66
+        </p>
+
+        <div class="footer-social">
+          <b>Давайте дружить!</b>
+          <ul>
+            <li><a class="social-button">VK</a></li>
+            <li><a class="social-button">Facebook</a></li>
+            <li><a class="social-button">Instagram</a></li>
+          </ul>
+        </div>
+
+        <p>
+          Разработано
+          <a class="button" href="#">HTML Academy<a>
+        </p>
+      </footer>
+
+      <section class="modal modal-login">
+        <h2>Личный кабинет</h2>
+        <p>Введите логин и пароль</p>
+        <!-- Здесь будет форма -->
+        <span class="modal-close">x</span>
+      </section>
   </body>
 </html>
