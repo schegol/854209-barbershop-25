@@ -37,20 +37,42 @@
         <form action="#" method="post">
           <fieldset>
             <legend>Производители:</legend>
-            <label><input type="checkbox" checked>Baxter of California</label>
-            <label><input type="checkbox">Mr Natty</label>
-            <label><input type="checkbox" checked>Suavecito</label>
-            <label><input type="checkbox">Malin+Goetz</label>
-            <label><input type="checkbox">Murray's</label>
-            <label><input type="checkbox" checked>American crew</label>
+            <ul>
+              <li>
+                <label><input type="checkbox" checked>Baxter of California</label>
+              </li>
+              <li>
+                <label><input type="checkbox">Mr Natty</label>
+              </li>
+              <li>
+                <label><input type="checkbox" checked>Suavecito</label>
+              </li>
+              <li>
+                <label><input type="checkbox">Malin+Goetz</label>
+              </li>
+              <li>
+                <label><input type="checkbox">Murray's</label>
+              </li>
+              <li>
+                <label><input type="checkbox" checked>American crew</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Группы товаров:</legend>
-            <label><input type="radio" name="product-group">Бритвенные принадлежности</label>
-            <label><input type="radio" name="product-group" checked>Средства для ухода</label>
-            <label><input type="radio" name="product-group">Аксессуары</label>
+            <ul>
+              <li>
+                <label><input type="radio" name="product-group">Бритвенные принадлежности</label>
+              </li>
+              <li>
+                <label><input type="radio" name="product-group" checked>Средства для ухода</label>
+              </li>
+              <li>
+                <label><input type="radio" name="product-group">Аксессуары</label>
+              </li>
+            </ul>
           </fieldset>
-          <input type="sumbit" value="Показать">
+          <button type="submit">Показать</button>
         </form>
       </section>
 
@@ -185,8 +207,8 @@
       <h2>Личный кабинет</h2>
       <p>Введите пожалуйста свой логин и пароль</p>
       <form action="#" method="post">
-        <input type="text" placeholder="Логин" aria-label="Логин личного кабинета">
-        <input type="password" placeholder="Пароль" aria-label="Пароль личного кабинета">
+        <input type="text" name="login" placeholder="Логин" aria-label="Логин личного кабинета">
+        <input type="password" name="password" placeholder="Пароль" aria-label="Пароль личного кабинета">
         <label>
           <input type="checkbox" checked>
           Запомните меня
