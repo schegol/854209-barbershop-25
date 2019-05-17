@@ -7,7 +7,7 @@
   <body>
     <header class="main-header">
       <nav class="main-nav">
-        <a class="site-logo" href="index.html">
+        <a class="site-logo" href="index.html" aria-label="Вернуться на главную">
           <img width="100" height="30" alt="Логотип барбершопа" src="http://placehold.it/150x100">
         </a>
         <ul class="main-menu">
@@ -34,7 +34,24 @@
 
       <section class="filters">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <!-- здесь будет форма -->
+        <form action="#" method="post">
+          <fieldset>
+            <legend>Производители:</legend>
+            <label><input type="checkbox" checked>Baxter of California</label>
+            <label><input type="checkbox">Mr Natty</label>
+            <label><input type="checkbox" checked>Suavecito</label>
+            <label><input type="checkbox">Malin+Goetz</label>
+            <label><input type="checkbox">Murray's</label>
+            <label><input type="checkbox" checked>American crew</label>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров:</legend>
+            <label><input type="radio" name="product-group">Бритвенные принадлежности</label>
+            <label><input type="radio" name="product-group" checked>Средства для ухода</label>
+            <label><input type="radio" name="product-group">Аксессуары</label>
+          </fieldset>
+          <input type="sumbit" value="Показать">
+        </form>
       </section>
 
       <section class="catalog">
@@ -52,7 +69,7 @@
             </a>
             <p>
               <b>2 900 ₽</b>
-              <a class="button" href="#"></a>
+              <input type="button" value="Купить">
             </p>
           </li>
           <li class="catalog-item">
@@ -67,7 +84,7 @@
             </a>
             <p>
               <b>750 ₽</b>
-              <a class="button" href="#"></a>
+              <input type="button" value="Купить">
             </p>
           </li>
           <li class="catalog-item">
@@ -82,7 +99,7 @@
             </a>
             <p>
               <b>290 ₽</b>
-              <a class="button" href="#"></a>
+              <input type="button" value="Купить">
             </p>
           </li>
           <li class="catalog-item">
@@ -97,7 +114,7 @@
             </a>
             <p>
               <b>500 ₽</b>
-              <a class="button" href="#"></a>
+              <input type="button" value="Купить">
             </p>
           </li>
           <li class="catalog-item">
@@ -127,15 +144,15 @@
             </a>
             <p>
               <b>3 900 ₽</b>
-              <a class="button" href="#"></a>
+              <input type="button" value="Купить">
             </p>
           </li>
         </ul>
         <ul class="pagination-list">
-          <li class="pagination-item"><a href="#">1</a></li>
-          <li class="pagination-item pagination-item-current"><a>2</a></li>
-          <li class="pagination-item"><a href="#">3</a></li>
-          <li class="pagination-item"><a href="#">4</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Первая страница результатов">1</a></li>
+          <li class="pagination-item pagination-item-current"><a aria-label="Вторая страница результатов">2</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Третья страница результатов">3</a></li>
+          <li class="pagination-item"><a href="#" aria-label="Четвертая страница результатов">4</a></li>
         </ul>
       </section>
 
@@ -152,9 +169,9 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-button">VK</a></li>
-          <li><a class="social-button">Facebook</a></li>
-          <li><a class="social-button">Instagram</a></li>
+          <li><a class="social-button" aria-label="Группа барбершопа Вконтакте">VK</a></li>
+          <li><a class="social-button" aria-label="Аккаунт барбершопа в Фейсбуке">Facebook</a></li>
+          <li><a class="social-button" aria-label="Аккаунт барбершопа в Инстаграме">Instagram</a></li>
         </ul>
       </div>
 
@@ -166,9 +183,18 @@
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите логин и пароль</p>
-      <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="#" method="post">
+        <input type="text" placeholder="Логин" aria-label="Логин личного кабинета">
+        <input type="password" placeholder="Пароль" aria-label="Пароль личного кабинета">
+        <label>
+          <input type="checkbox" checked>
+          Запомните меня
+        </label>
+        <a href="#">Я забыл пароль!</a>
+        <input type="submit" value="Войти">
+      </form>
+      <button class="modal-close" aria-label="Закрыть форму входа">x</span>
     </section>
   </body>
 </html>

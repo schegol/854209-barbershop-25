@@ -14,11 +14,11 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
-          <li><a href="#">Магазин</a></li>
+          <li><a href="catalog.html">Магазин</a></li>
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-area">
-          <li class="login"><a href="#">Войти</a></li>
+          <li class="login"><a href="#" aria-label="Войти в личный кабинет">Войти</a></li>
         </ul>
       </nav>
     </header>
@@ -66,10 +66,10 @@
       <section class="gallery">
         <h2>Фотогалерея</h2>
         <figure class="gallery-content">
-          <a href="#"><img src="img/gallery-slide-1.jpg" width="286" height="164" alt="Интерьер"></a>
+          <a href="#" aria-label="Фото интерьера барбершопа"><img src="img/gallery-slide-1.jpg" width="286" height="164" alt="Интерьер"></a>
         </figure>
-        <span class="button gallery-button gallery-back">Назад</span>
-        <span class="button gallery-button gallery-forward">Вперед</span>
+        <button class="gallery-button gallery-back" aria-label="Предыдущее фото в галерее">Назад</button>
+        <button class="gallery-button gallery-forward" aria-label="Следующее фото в галерее">Вперед</button>
       </section>
 
       <section class="contacts">
@@ -93,8 +93,21 @@
         <p>
           Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони
         </p>
-        <!-- Здесь будет форма -->
-        <span class="button send-button">Отправить</span>
+        <form action="#" method="post">
+          <label>Дата
+            <input type="date" name="date" min="2019-01-01" max="2019-12-31" value="08.10.2019">
+          </label>
+          <label>Время
+            <input type="time" name="time" value="2019-07-21" min="2019-01-01" max="2019-12-31" value="10:00">
+          </label>
+          <label>Ваше имя
+            <input type="text" name="name" placeholder="Борода">
+          </label>
+          <label>Телефон
+            <input type="tel" name="phone" placeholder="+7 123 456-78-90">
+          </label>
+          <input type="submit" class="submit-button" value="Отправить">
+        </form>
       </section>
     </main>
 
@@ -109,9 +122,9 @@
       <div class="footer-social">
         <b>Давайте дружить!</b>
         <ul>
-          <li><a class="social-button">VK</a></li>
-          <li><a class="social-button">Facebook</a></li>
-          <li><a class="social-button">Instagram</a></li>
+          <li><a class="social-button" aria-label="Группа барбершопа Вконтакте">VK</a></li>
+          <li><a class="social-button" aria-label="Аккаунт барбершопа в Фейсбуке">Facebook</a></li>
+          <li><a class="social-button" aria-label="Аккаунт барбершопа в Инстаграме">Instagram</a></li>
         </ul>
       </div>
 
@@ -123,15 +136,24 @@
 
     <section class="modal modal-login">
       <h2>Личный кабинет</h2>
-      <p>Введите логин и пароль</p>
-      <!-- здесь будет форма -->
-      <span class="modal-close">x</span>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <form action="#" method="post">
+        <input type="text" placeholder="Логин" aria-label="Логин личного кабинета">
+        <input type="password" placeholder="Пароль" aria-label="Пароль личного кабинета">
+        <label>
+          <input type="checkbox" checked>
+          Запомните меня
+        </label>
+        <a href="#">Я забыл пароль!</a>
+        <input type="submit" value="Войти">
+      </form>
+      <button class="modal-close" aria-label="Закрыть форму входа">x</span>
     </section>
 
     <section class="modal modal-map">
       <h2 class="visually-hidden">Как до нас добраться</h2>
       <!-- Здесь будет форма -->
-      <span class="modal-close">x</span>
+      <button class="modal-close" aria-label="Закрыть карту">x</span>
     </section>
   </body>
 </html>
