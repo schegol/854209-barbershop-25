@@ -10,7 +10,7 @@ body {
   color: #fff;
 
   background-color: #000;
-  background-image: url("img/index-background.jpg");
+  background-image: url("../img/index-background.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
