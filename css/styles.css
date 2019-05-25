@@ -39,7 +39,6 @@ a {
 .main-header {
   margin-bottom: 75px;
 
-  /* Временно для сетки */
   min-height: 285px;
 }
 
@@ -48,7 +47,6 @@ a {
   flex-direction: column;
   align-items: center;
 
-  /* Временно для сетки */
   min-height: 285px;
   background-color: transparent;
 
