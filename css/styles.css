@@ -19,13 +19,116 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  padding: 0;
+
+  border: 0;
+  clip: rect(0 0 0 0);
+
+  overflow: hidden;
+}
+
+/* .modal {
+  display: none;
+} */
+
+.main-header {
+  margin-bottom: 75px;
+
+  /* Временно для сетки */
+  min-height: 285px;
+}
+
 .main-nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* Временно для сетки */
+  min-height: 285px;
+  background-color: transparent;
+
   font-size: 16px;
   line-height: 20px;
   color: #fff;
 
   background-color: #000000;
 }
+
+.site-logo {
+  order: 2;
+  width: 371px;
+  height: 155px;
+
+}
+
+.main-menu {
+  width: 620px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.user-area {
+  width: 140px;
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
+.menu-wrapper {
+  width: 100%;
+  margin-bottom: 60px;
+
+  background-color: #000;
+}
+
+.container {
+  width: 940px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.menu-wrapper .container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.news {
+  width: 385px;
+}
+
+.gallery {
+  width: 290px;
+}
+
+.contacts {
+  width: 385px;
+}
+
+.get-in-line {
+  width: 290px;
+}
+
+
+
 
 .main-nav a {
   color: #fff;
@@ -48,6 +151,7 @@ a {
 
 .feature-item {
   text-align: center;
+  width: 280px;
 }
 
 .feature-item h3 {
@@ -56,6 +160,11 @@ a {
 }
 
 .index-columns {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 80px;
+  margin-bottom: 35px;
+
   color: #000;
 
   background-color: #f8f5f2;
@@ -96,7 +205,8 @@ a {
   background-color: #663d15;
 }
 
-.get-in-line input {
+.get-in-line input[type="text"],
+.get-in-line input[type="tel"] {
   font: inherit;
 
   background-color: transparent;
@@ -107,13 +217,33 @@ a {
   border-color: #663d15;
 }
 
+.get-in-line input[type="sumbit"] {
+  font: inherit;
+
+  background-color: #000;
+}
+
 .main-footer {
+  margin-top: 65px;
+  padding: 60px 0;
+
   color: #fff;
 
   background-color: #212121;
   background-image: url("../img/dark-background-tile.jpg");
   background-position: 0 0;
   background-repeat: repeat;
+}
+
+.main-footer .container {
+  display: flex;
+
+}
+
+.footer-contacts {
+  margin: 0;
+  margin-right: 80px;
+  width: 320px;
 }
 
 .footer-contacts>a {
@@ -127,6 +257,8 @@ a {
 }
 
 .footer-social {
+  width: 145px;
+
   text-align: center;
 }
 
@@ -139,6 +271,11 @@ a {
 }
 
 .footer-copyright {
+  margin: 0;
+  margin-left: auto;
+  width: 150px;
+
+
   text-align: center;
 }
 
