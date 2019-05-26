@@ -32,9 +32,9 @@ a {
   overflow: hidden;
 }
 
-/* .modal {
+.modal {
   display: none;
-} */
+}
 
 .main-header {
   margin-bottom: 75px;
@@ -126,9 +126,6 @@ a {
   width: 290px;
 }
 
-
-
-
 .main-nav a {
   color: #fff;
 }
@@ -137,7 +134,14 @@ a {
 .user-area,
 .feature-list,
 .news-list,
-.footer-social ul {
+.footer-social ul,
+.breadcrumbs,
+.filters ul,
+.catalog-list,
+.pagination-list {
+  margin: 0;
+  padding: 0;
+
   list-style: none;
 }
 
@@ -326,4 +330,9 @@ a {
 .restore:hover,
 .restore:focus {
   text-decoration: none;
+}
+
+.inner-page {
+  background-color: #f8f3f0;
+  background-image: url("../img/noisy-background-tile.jpg");
 }
