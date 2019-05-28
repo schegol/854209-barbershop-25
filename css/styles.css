@@ -220,7 +220,8 @@ input[type="radio"].visually-hidden {
 .catalog-list,
 .pagination-list,
 .product-image-small,
-.product-list {
+.product-list,
+.price-page-products ul {
   margin: 0;
   padding: 0;
 
@@ -912,4 +913,127 @@ input[type="radio"].visually-hidden {
 .product-description-wrap {
   display: flex;
   justify-content: space-between;
+}
+
+.price-page {
+  color: #000;
+}
+
+.price-page-heading {
+  position: relative;
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
+  display: block;
+
+  font-size: 48px;
+  line-height: 48px;
+  text-align: center;
+}
+
+.price-page-heading::before,
+.price-page-heading::after {
+  content: "";
+
+  position: absolute;
+  top: 24px;
+  height: 2px;
+  width: 160px;
+
+  background-color: #000;
+}
+
+.price-page-heading::before {
+  right: 0;
+}
+
+.price-page-heading::after {
+  left: 0;
+}
+
+.price-page h2 {
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 0;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.price-page-products {
+  margin: 0;
+  margin-bottom: 65px;
+  padding: 0;
+}
+
+.price-page-products li {
+  position: relative;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.price-page-products li::before {
+  content: "";
+
+  position: absolute;
+  top: 8px;
+  left: -18px;
+  width: 8px;
+  height: 8px;
+
+  background-color: #000;
+  transform: rotate(45deg);
+}
+
+.price-column-left {
+  margin: 0;
+  padding: 0;
+  width: 380px;
+}
+
+.price-column-right {
+  margin: 0;
+  padding: 0;
+  width: 460px;
+}
+
+.price-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-table {
+  margin: 0;
+  margin-bottom: 125px;
+  padding: 0;
+  width: 100%;
+  min-height: 125px;
+  box-sizing: border-box;
+
+  border: 2px solid #000;
+}
+
+.price-table td {
+  margin: 0;
+  padding: 0;
+  padding: 8px 0 8px;
+  vertical-align: middle;
+  width: 50%;
+  border: 2px solid #000;
+  border-collapse: collapse;
+}
+
+td.price-table-service {
+  padding-left: 17px;
+}
+
+.price-table-price {
+  text-align: center;
+}
+
+.price-page-description {
+  margin: 0;
+  margin-bottom: 80px;
+  padding: 0;
 }
