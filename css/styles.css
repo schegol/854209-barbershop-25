@@ -159,6 +159,22 @@ input[type="radio"].visually-hidden {
   height: 20px;
 }
 
+.main-menu-current {
+  position: relative;
+}
+
+.main-menu-current::after {
+  content: "";
+
+  position: absolute;
+  top: 67px;
+  right: 0;
+  width: 100%;
+  height: 4px;
+
+  background-color: #fff;
+}
+
 .feature-list {
   display: flex;
   justify-content: space-between;
