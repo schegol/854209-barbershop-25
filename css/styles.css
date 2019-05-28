@@ -703,6 +703,13 @@ input[type="radio"].visually-hidden {
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
+.catalog-item:hover,
+.catalog-item:focus,
+.product-images img:hover,
+.product-images img:focus {
+  box-shadow: 5px 5px 25px 0 rgba(0, 0, 0, 0.2);
+}
+
 .catalog-item:not(:nth-child(3n)) {
   margin-right: 20px;
 }
