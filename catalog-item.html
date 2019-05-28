@@ -8,12 +8,14 @@
     <link href="css/styles.css" rel="stylesheet">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-nav">
-        <a class="site-logo" href="index.html" aria-label="Вернуться на главную">
-          <img width="111" height="24" alt="Логотип барбершопа" src="img/logo.svg">
-        </a>
+    <header class="main-header inner-page-header">
+      <nav class="main-nav container">
         <ul class="main-menu">
+          <li>
+            <a class="site-logo-inner" href="index.html" aria-label="Вернуться на главную">
+              <img width="100" height="30" alt="Логотип барбершопа" src="img/logo.svg">
+            </a>
+          </li>
           <li><a href="#">Информация</a></li>
           <li><a href="#">Новости</a></li>
           <li><a href="#">Прайс-лист</a></li>
@@ -21,51 +23,57 @@
           <li><a href="#">Контакты</a></li>
         </ul>
         <ul class="user-area">
-          <li class="login"><a href="#">Вход</a></li>
+          <li class="login"><a class="login-link" href="#" aria-label="Войти в личный кабинет">Вход</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <h1 class="page-title">Набор для путешествия "Baxter of California"</h1>
+    <main class="inner-page item-page">
+      <div class="container">
+        <h1 class="page-title">Набор для путешествия "Baxter of California"</h1>
 
-      <ul class="breadcrumbs">
-        <li><a href="index.html">Главная</a></li>
-        <li><a href="catalog.html">Магазин</a></li>
-        <li><a href="#">Средства для ухода</a></li>
-        <li class="breadcrumbs-current">Набор для путешествий «Baxter of California»</li>
-      </ul>
-
-      <section class="product-images">
-        <h2 class="visually-hidden">Изображения товара</h2>
-        <p>
-          <img class="product-image-full" width="460" height="498" src="img/product-big.jpg" alt="Фото набора">
-        </p>
-        <ul class="product-image-small">
-          <img width="140" height="149" src="img/product-small-1.jpg" alt="Другое фото набора">
-          <img width="140" height="149" src="img/product-small-2.jpg" alt="Упакованный набор">
-          <img width="140" height="149" src="img/product-small-3.jpg" alt="Фото набора">
+        <ul class="breadcrumbs">
+          <li><a class="breadcrumbs-item" href="index.html">Главная</a></li>
+          <li><a class="breadcrumbs-item" href="catalog.html">Магазин</a></li>
+          <li><a class="breadcrumbs-item" href="#">Средства для ухода</a></li>
+          <li><a class="breadcrumbs-item breadcrumbs-item-current" href="#">Набор для путешествий «Baxter of California»</a></li>
         </ul>
-      </section>
 
-      <section class="product-description">
-        <h2 class="visually-hidden">Описание товара</h2>
-        <p class="product-avalibility">Есть в наличии</p>
-        <p class="product-article">Артикул: Dexter-AE</p>
-        <p class="product-details">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
-        <p class="product-price">
-          <b>2 900 ₽</b>
-          <input type="button" value="Купить">
-        </p>
-        <h3>В набор входят</h3>
-        <ul class="product-list">
-          <li>Средство для умывания (50 мл)</li>
-          <li>Увлажняющий крем (50 мл)</li>
-          <li>Крем для бритья (50 мл)</li>
-          <li>Крем после бритья, шампунь (50 мл)</li>
-          <li>Удобная кожаная косметичка</li>
-        </ul>
-      </section>
+        <div class="catalog-item-wrap">
+          <section class="product-images">
+            <h2 class="visually-hidden">Изображения товара</h2>
+            <p>
+              <img class="product-image-full" width="460" height="498" src="img/product-big.jpg" alt="Фото набора">
+            </p>
+            <ul class="product-image-small">
+              <li><img width="140" height="149" src="img/product-small-1.jpg" alt="Другое фото набора"></li>
+              <li><img width="140" height="149" src="img/product-small-2.jpg" alt="Упакованный набор"></li>
+              <li><img width="140" height="149" src="img/product-small-3.jpg" alt="Фото набора"></li>
+            </ul>
+          </section>
+
+          <section class="product-description">
+            <h2 class="visually-hidden">Описание товара</h2>
+            <div class="product-description-wrap">
+              <p class="product-avalibility">Есть в наличии</p>
+              <p class="product-article">Артикул: Dexter-AE</p>
+            </div>
+            <p class="product-details">Travel Kit – необходимый аксессуар во время любого путешествия. В аккуратной кожаной сумке находится все, что нужно для бритья и ухода за кожей во время рабочей поездки или отдыха: средство для умывания, увлажняющий крем, крем для бритья, крем после бритья, шампунь. Набор также может стать отличным подарком.</p>
+            <p class="product-price">
+              <b>2 900 ₽</b>
+              <button class="button" type="submit">Купить</button>
+            </p>
+            <h3>В набор входят</h3>
+            <ul class="product-list">
+              <li>Средство для умывания (50 мл)</li>
+              <li>Увлажняющий крем (50 мл)</li>
+              <li>Крем для бритья (50 мл)</li>
+              <li>Крем после бритья, шампунь (50 мл)</li>
+              <li>Удобная кожаная косметичка</li>
+            </ul>
+          </section>
+        </div>
+      </div>
     </main>
 
     <footer class="main-footer">
