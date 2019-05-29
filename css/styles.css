@@ -961,14 +961,14 @@ input[type="radio"].visually-hidden {
 
 .price-page-products {
   margin: 0;
-  margin-bottom: 65px;
+  margin-bottom: 55px;
   padding: 0;
 }
 
 .price-page-products li {
   position: relative;
   margin: 0;
-  margin-top: 20px;
+  margin-top: 12px;
   padding: 0;
   margin-left: 20px;
 }
@@ -1012,6 +1012,7 @@ input[type="radio"].visually-hidden {
   box-sizing: border-box;
 
   border: 2px solid #000;
+  border-collapse: collapse;
 }
 
 .price-table td {
@@ -1021,7 +1022,7 @@ input[type="radio"].visually-hidden {
   vertical-align: middle;
   width: 50%;
   border: 2px solid #000;
-  border-collapse: collapse;
+
 }
 
 td.price-table-service {
@@ -1036,4 +1037,5 @@ td.price-table-service {
   margin: 0;
   margin-bottom: 80px;
   padding: 0;
+  width: 380px;
 }
